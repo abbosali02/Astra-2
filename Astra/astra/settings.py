@@ -74,24 +74,24 @@ WSGI_APPLICATION = 'astra.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-if not DEBUG:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'new_db',
-            'USER': 'new_db_user',
-            'PASSWORD': 'new_db_password',
-            'HOST': 'localhost',
-            'PORT': '',
-        }
-    }
-else:
-    DATABASES = {
-        'default': {
+#if not DEBUG:
+ #   DATABASES = {
+  #      'default': {
+   #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #        'NAME': 'new_db1',
+     #       'USER': 'new_db_user1',
+      #      'PASSWORD': 'new_db1_password',
+       #     'HOST': 'localhost',
+        #    'PORT': '',
+        #}
+    #}
+#else:
+DATABASES = {
+	'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
         }
-    }
+}
     
 
 
@@ -141,4 +141,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
