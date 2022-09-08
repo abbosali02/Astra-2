@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <link rel="shortcut icon" type="x-icon" href="{% static 'img/Icon.png' %}">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}">
+    
+     <link rel="stylesheet" href="{% static 'css/thank.css' %}">
+     <link rel="stylesheet" href="{% static 'css/seven.css' %}" />
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+     <title>Ad-Astra</title>
+</head>
+<body>
+    
+     <header>
+        <div class="section">
+          <div class="container">
+            <div class="columns">
+              <div class="column has-text-centered">
+                <div class="eText1 py-4">
+                  <div><h1>Thank you</h1></div>
+                </div>
+                <div class="eImg">
+                  <img src="{% static 'img/gmail.png' %}" alt="" />
+                </div>
+                <div class="eText2 pt-4">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                    nulla laboriosam quos laudantium architecto recusandae! <br />
+                    Voluptatibus officiis exercitationem repellendus. Eveniet
+                    voluptates quos illo accusantium fuga excepturi assumenda
+                    necessitatibus fugit maxime.
+                  </p>
+                </div>
+                <div class="pt-6">
+                  <span class="eBtn px-6 mt-3 py-3 mr-4 pt-4 pb-4">
+                    <a href="{% url 'home' %}" class="">Продолжать</a>
+                  </span>
+                </div>
+                <div class="eText2 pt-6 pr-4">
+                  <p>Copyright - All Right Reserved</p>
+                </div>
+                <div class="eText2 pt-3 pr-2">
+                  <a href="{% url 'policy' %}">Privacy Policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="folio">
+          <div class="folio-wrapper">
+            <img src="{% static 'img/about/Logo.png' %}" alt="">
+          </div>
+          <p>
+            Agency is a full-service agency, busy designing and building beautiful
+            digital products, brands, and experiences.
+          </p>
+          <div class="folio-nav">
+            <a href="{% url 'home' %}">Home</a>
+           
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'team' %}">Team</a>
+                <a href="{% url 'result' %}">Results</a>
+                
+          </div>
+          <footer>
+            <p>© 2022, Vectorweb.io</p>
+            <div class="footer-icon">
+              <a href="{% url 'contact' %}">Contact us</a>
+              
+            </div>
+          </footer>
+        </div>
+</body>
+</html>

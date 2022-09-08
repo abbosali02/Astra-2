@@ -1,0 +1,64 @@
+.eText1 h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 56px;
+  /* identical to box height, or 147% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+
+.eText2 p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* Dark blue */
+
+  color: #282938;
+
+  opacity: 0.7;
+}
+
+.eText2 a {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* Dark blue */
+
+  opacity: 0.7;
+}
+
+.eImg img {
+  width: 420px;
+  height: 300px;
+}
+
+.eBtn {
+  cursor: pointer;
+  background-color: darkblue;
+  height: 60px;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  box-sizing: border-box;
+  border-radius: 41px;
+}
+
+.eBtn a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+.eBtn a:hover {
+  color: white;
+}

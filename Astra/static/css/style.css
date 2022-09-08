@@ -1,0 +1,136 @@
+html,body{
+  overflow-x: hidden;
+  }
+.folio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 3rem;
+  background-color: black;
+  flex-direction: column;
+  
+  font-family: "Open Sans", sans-serif;
+}
+
+.folio-wrapper {
+  display: flex;
+}
+.folio-wrapper > h1 {
+  font-size: 5rem;
+}
+.folio-wrapper img {
+  width: 80%;
+  height: 150px;
+
+  
+  border-radius: 10px;
+  background-size: contain;
+  margin-right: 10px;
+}
+.folio > p {
+  margin: 1rem 0;
+}
+
+.folio-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  
+}
+.folio-nav > a {
+  text-decoration: none;
+  color: white;
+  margin: 0 5rem;
+  font-size: 1.3rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  border-top: 1px solid white;
+}
+.footer-icon {
+  display: flex;
+  align-items: center;
+}
+.footer-icon > a {
+  color: #4262ff;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-size: 18px;
+}
+
+.footer-icon > i {
+  margin-right: 30px;
+  font-size: 1.2rem;
+  transition: 0.5s all;
+}
+.footer-icon > i:hover {
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 800px) {
+  .header_section {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-header {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .about_us > .center {
+    flex-direction: column;
+  }
+
+  .partnership_section {
+    flex-direction: column;
+  }
+  .plane {
+    display: none;
+  }
+  nav > ul {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+
+  .center {
+    flex-direction: column;
+    text-align: center;
+  }
+  .article_wrapper {
+    width: 100%;
+  }
+  article {
+    width: 90%;
+  }
+  .icon_partner > img {
+    width: 50px;
+  }
+  .folio-nav > a {
+    margin: 1rem;
+  }
+  footer {
+    flex-direction: column;
+    line-height: 40px;
+  }
+}
+
+
+@media only screen and (max-width: 700px) and (min-width: 230px){
+
+
+}

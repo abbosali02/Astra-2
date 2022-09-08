@@ -1,0 +1,180 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aa-Astra</title>
+    <link rel="stylesheet" href="{% static 'css/seven.css' %}" />
+    <link rel="shortcut icon" type="x-icon" href="{% static 'img/Icon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/price.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  </head>
+
+  <body>
+    <nav>
+   
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+                <li> <a href="{% url 'programs' %}">Programs</a></li>
+                <li><a href="{% url 'result' %}">Results</a></li>
+                <li><a href="{% url 'team' %}">Team</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </nav>
+      
+
+    <div class="wrapper">
+     <div class="table basic">
+       <div class="price-section">
+         <div class="price-area">
+           <div class="inner-area">
+             <span class="text">$</span>
+             <span class="price">29</span>
+           </div>
+         </div>
+       </div>
+       <div class="package-name"></div>
+       <ul class="features">
+         <li>
+           <span class="list-name">One Selected Template</span>
+           <span class="icon check"><i class="fas fa-check"></i></span>
+         </li>
+         <li>
+           <span class="list-name">100% Responsive Design</span>
+           <span class="icon check"><i class="fas fa-check"></i></span>
+         </li>
+         <li>
+           <span class="list-name">Credit Remove Permission</span>
+           <span class="icon cross"><i class="fas fa-times"></i></span>
+         </li>
+         <li>
+           <span class="list-name">Lifetime Template Updates</span>
+           <span class="icon cross"><i class="fas fa-times"></i></span>
+         </li>
+       </ul>
+       <div class="btn"><button>Purchase</button></div>
+     </div>
+
+     
+     <div class="table premium">
+       <div class="ribbon"><span>Recommend</span></div>
+       <div class="price-section">
+         <div class="price-area">
+           <div class="inner-area">
+             <span class="text">$</span>
+             <span class="price">59</span>
+           </div>
+         </div>
+       </div>
+       <div class="package-name"></div>
+       <ul class="features">
+         <li>
+           <span class="list-name">Five Existing Templates</span>
+           <span class="icon check"><i class="fas fa-check"></i></span>
+         </li>
+         <li>
+           <span class="list-name">100% Responsive Design</span>
+           <span class="icon check"><i class="fas fa-check"></i></span>
+         </li>
+         <li>
+           <span class="list-name">Credit Remove Permission</span>
+           <span class="icon check"><i class="fas fa-check"></i></span>
+         </li>
+         <li>
+           <span class="list-name">Lifetime Template Updates</span>
+           <span class="icon cross"><i class="fas fa-times"></i></span>
+         </li>
+       </ul>
+       <div class="btn"><button>Purchase</button></div>
+     </div>
+     
+     <div class="table ultimate">
+       <div class="price-section">
+         <div class="price-area">
+           <div class="inner-area">
+             <span class="text">$</span>
+             <span class="price">99</span>
+           </div>
+         </div>
+       </div>
+       <div class="package-name"></div>
+       <ul class="features">
+         <li>
+           <span class="list-name">All Existing Templates</span>
+           <span class="icon check"><i class="fas fa-check"></i></span>
+         </li>
+         <li>
+           <span class="list-name">100% Responsive Design</span>
+           <span class="icon check"><i class="fas fa-check"></i></span>
+         </li>
+         <li>
+           <span class="list-name">Credit Remove Permission</span>
+           <span class="icon check"><i class="fas fa-check"></i></span>
+         </li>
+         <li>
+           <span class="list-name">Lifetime Template Updates</span>
+           <span class="icon check"><i class="fas fa-check"></i></span>
+         </li>
+       </ul>
+       <div class="btn"><button>Purchase</button></div>
+     </div>
+     
+
+     <div class="table premium">
+      <div class="ribbon"><span>Recommend</span></div>
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">$</span>
+            <span class="price">59</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Five Existing Templates</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">100% Responsive Design</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Credit Remove Permission</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Lifetime Template Updates</span>
+          <span class="icon cross"><i class="fas fa-times"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button>Purchase</button></div>
+    </div>
+   </div>
+
+
+    <div class="folio">
+      <div class="folio-wrapper">
+        <img src="{% static 'img/about/Logo.png' %}" alt="">
+      </div>
+      <p>
+        Agency is a full-service agency, busy designing and building beautiful
+        digital products, brands, and experiences.
+      </p>
+      <div class="folio-nav">
+        <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'team' %}">Team</a>
+            <a href="{% url 'result' %}">Results</a>
+      </div>
+      <footer>
+        <p>© 2022, Vectorweb.io</p>
+        <div class="footer-icon">
+          <a href="{% url 'contact' %}">Contact us</a>
+          
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

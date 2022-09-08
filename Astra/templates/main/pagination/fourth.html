@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <link rel="shortcut icon" type="x-icon" href="{% static 'img/Icon.png' %}">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{% static 'css/pagination.css' %}">
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+     <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}">
+     
+  
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+     <title>Ad-Astra</title>
+</head>
+<body>
+  <style> 
+    .card-info a h1{
+      color: darkblue;
+      transition: 0.3s ease-in;
+    }
+    .card-info a h1:hover{
+      transform: translateY(-2px);
+      
+    }
+    </style>
+<h1 class="has-text-centered title pb-2 pt-5">IELTS BAND 8.5</h1>
+<h2 class="subtitle has-text-centered pt-4 pb-5">Success is the sum of small efforts, repeated day in and day out</h2>
+        <div class="container">
+          <div class="card-content" style="display: none">
+               {% for item in eighthalf %}
+               <div class="card">
+                <div class="card-image"><img src="{{item.img.url}}" alt=""></div>
+                <div class="card-info">
+                  <h3 class="pt-3">{{ item.title }}</h3>
+                  <p class="pb-2">{{ item.desciption }}</p>
+                  <a href="{{ item.get_absolute_url }}"><h1>View more . . .</h1></a>
+                </div>
+              </div>
+          {% endfor  %}
+            
+            <div class="pagination">
+              <li class="page-item previous-page disable"><a class="page-link" href="#">Prev</a></li>
+              <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+              <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
+              <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
+              <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+              <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
+              <li class="page-item next-page"><a class="page-link" href="#">Next</a></li>
+            </div>
+          </div>
+        </div>
+
+        <div class="folio">
+          <div class="folio-wrapper">
+            <img src="{% static 'img/about/Logo.png' %}" alt="">
+            
+          </div>
+          <p>
+            Agency is a full-service agency, busy designing and building beautiful
+            digital products, brands, and experiences.
+          </p>
+          <div class="folio-nav">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'team' %}">Team</a>
+            <a href="{% url 'result' %}">Results</a>
+          </div>
+          <footer>
+            <p>© 2022, Vectorweb.io</p>
+            <div class="footer-icon">
+              <a href="{% url 'contact' %}">Contact us</a>
+              <i class="fa-brands fab fa-facebook "></i>
+              <i class="fa-brands fab fa-instagram"></i>
+              <i class="fa-brands fab fa-telegram"></i>
+              <i class="fa-brands fab fa-youtube"></i>
+            </div>
+          </footer>
+        </div>
+        <script type="text/javascript">
+          function getPageList(totalPages, page, maxLength){
+            function range(start, end){
+              return Array.from(Array(end - start + 1), (_, i) => i + start);
+            }
+          
+            var sideWidth = maxLength < 9 ? 1 : 2;
+            var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+            var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+          
+            if(totalPages <= maxLength){
+              return range(1, totalPages);
+            }
+          
+            if(page <= maxLength - sideWidth - 1 - rightWidth){
+              return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages));
+            }
+          
+            if(page >= totalPages - sideWidth - 1 - rightWidth){
+              return range(1, sideWidth).concat(0, range(totalPages- sideWidth - 1 - rightWidth - leftWidth, totalPages));
+            }
+          
+            return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
+          }
+          
+          $(function(){
+            var numberOfItems = $(".card-content .card").length;
+            var limitPerPage = 9; //How many card items visible per a page
+            var totalPages = Math.ceil(numberOfItems / limitPerPage);
+            var paginationSize = 7; //How many page elements visible in the pagination
+            var currentPage;
+          
+            function showPage(whichPage){
+              if(whichPage < 1 || whichPage > totalPages) return false;
+          
+              currentPage = whichPage;
+          
+              $(".card-content .card").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
+          
+              $(".pagination li").slice(1, -1).remove();
+          
+              getPageList(totalPages, currentPage, paginationSize).forEach(item => {
+                $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
+                .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
+                .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
+              });
+          
+              $(".previous-page").toggleClass("disable", currentPage === 1);
+              $(".next-page").toggleClass("disable", currentPage === totalPages);
+              return true;
+            }
+          
+            $(".pagination").append(
+              $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Prev")),
+              $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Next"))
+            );
+          
+            $(".card-content").show();
+            showPage(1);
+          
+            $(document).on("click", ".pagination li.current-page:not(.active)", function(){
+              return showPage(+$(this).text());
+            });
+          
+            $(".next-page").on("click", function(){
+              return showPage(currentPage + 1);
+            });
+          
+            $(".previous-page").on("click", function(){
+              return showPage(currentPage - 1);
+            });
+          });
+          </script>
+          <script>
+            $(document).ready(function(){
+              $('.counter').counterUp({
+                delay: 10,
+                time: 1200
+              });
+            });
+            </script>
+            <script>
+              let calcScrollValue = () => {
+          let scrollProgress = document.getElementById("progress");
+          let progressValue = document.getElementById("progress-value");
+          let pos = document.documentElement.scrollTop;
+          let calcHeight =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+          let scrollValue = Math.round((pos * 100) / calcHeight);
+          if (pos > 100) {
+            scrollProgress.style.display = "grid";
+          } else {
+            scrollProgress.style.display = "none";
+          }
+          scrollProgress.addEventListener("click", () => {
+            document.documentElement.scrollTop = 0;
+          });
+          scrollProgress.style.background = `conic-gradient(#073763 ${scrollValue}%, #ffffff ${scrollValue}%)`;
+        };
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+            </script>
+</body>
+</html>

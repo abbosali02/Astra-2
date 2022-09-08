@@ -1,0 +1,234 @@
+.message {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: fixed;
+     text-align: center;
+     background-color: #000;
+     color: #5cb435;
+     font-size: calc(.9vh + 2.3vw);
+     border-radius: 30px;
+     width: 65vw;
+     min-width: 420px;
+     height: 40vh;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     opacity: 1;
+     transition: all .5s;
+   }
+   
+   .message p:nth-child(3) {
+     margin: 1rem 0;
+     color: #fff;
+     font-weight: bold;
+   }
+   
+   label {
+     position: absolute;
+     cursor: pointer;
+     top: .3rem;
+     right: .5rem;
+     font-size: 3rem;
+     color: #fff;
+     width: 3rem;
+     height: auto;
+     margin-left: 1rem;
+   }
+   
+   #toggle:checked ~ .message {
+     opacity: 0;
+     transition: all .7s;
+   }
+   
+   input[type="checkbox"] {
+     position: absolute;
+     top: 0;
+     left: -9999px;
+   }
+   
+   
+   
+   /*we hide the page behind a black screen*/
+   .cover {
+     display: flex;
+     height: 100vh;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     background-color: #000;
+     animation: hide-cover .3s 4.5s both;
+     
+   /*      border: 5px solid blue;*/
+   }
+   
+   /*removing black screen*/
+   @keyframes hide-cover {
+     0% {
+       opacity: 1;
+     }
+     100% {
+       opacity: 0;
+       z-index: -1;
+     }
+   }
+   
+   
+   /*align everything in center*/
+   .containerl {
+     width: 100vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+   /*      border: 5px solid red;*/
+   }
+   
+   /*position video*/
+   video {
+     position: absolute;
+     top: -2rem;
+     left: -30%;
+     width: 140%;
+     height: 100%;
+     object-fit: cover;
+     z-index: 2;
+     pointer-events: none;
+     mix-blend-mode: exclusion;
+   }
+   
+   /*animation for text container*/
+   @keyframes scale-out {
+     0% {
+       transform: scale(1.2);
+     }
+     100% {
+       transform: scale(0);
+     }
+   }
+   
+   /*position text container*/
+   .text-container {
+     position: fixed;
+     top: 34.5%;
+     padding: 2rem;
+     animation: scale-out .5s cubic-bezier(.55, .1, .68, .53) 3.7s both;
+     
+   /*      border: 5px solid yellow;*/
+   }
+   
+   
+   /*style for text block*/
+   .text-block {
+     color: #ebca16;
+     text-transform: uppercase;
+     letter-spacing: .1em;
+     font-weight: bold;
+     text-align: center;
+   }
+   
+   
+   /*style for subtitle*/
+   .container .text-block p.sub {
+     position: relative;
+     margin-top: 1.3rem;
+     color: #505cf0;
+   }
+   
+   /*animation for horizontal lines*/
+   @keyframes slide-lines {
+     0% {
+       width: 0;
+     }
+     90% {
+       width: 100%;
+     }
+     100% {
+       background-color: #fff;
+       height: 0;
+     }
+   }
+   
+   /*animated lines*/
+   .top-line-one {
+     width: 65%;
+     height: 15px;
+     background-color: #67a743;
+     position: absolute;
+     top: 32%;
+     right: 0;
+     animation: slide-lines 1s 2.3s both;
+   }
+   
+   .top-line-two {
+     width: 65%;
+     height: 20px;
+     background-color: #67a743;
+     position: absolute;
+     top: 25%;
+     right: 31%;
+     animation: slide-lines 1s 2.5s both;
+   }
+   
+   .bottom-line-one {
+     width: 65%;
+     height: 15px;
+     background-color: #29246b;
+     position: absolute;
+     top: 62%;
+     left: 0;
+     animation: slide-lines 1s 2.3s both;
+   }
+   
+   .bottom-line-two {
+     width: 65%;
+     height: 20px;
+     background-color: #29246b;
+     position: absolute;
+     bottom: 29%;
+     left: 31%;
+     animation: slide-lines 1s 2.5s both;
+   }
+   
+   /*here we build an animated mask for text block*/
+   @keyframes mask-l-r {
+     0% {
+       background: #000;
+     }
+     60% {
+       background: #000;
+       opacity: 1;
+     }
+     100% {
+       width: 0;
+     }
+   }
+   
+   /*adjust position for text mask*/
+   .mask-l-r {
+     position: fixed;
+     border-radius: 999px;
+     top: 33.5%;
+     height: 21%;
+     right: 12%;
+     width: 80%;
+     animation: mask-l-r 3200ms 850ms both;
+     z-index: 1;
+     
+   /*      border: 5px solid red;*/
+   }
+   
+   @media only screen and (min-width: 560px) {
+     .text-block {
+       font-size: calc(.8vh + 2vw);
+     }
+     .mask-l-r {
+       height: 25%;
+       right: 20%;
+       top: 35.5%;
+       width: 70%;
+     }
+   }
+   

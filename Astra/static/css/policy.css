@@ -1,0 +1,29 @@
+.pText1 h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+
+.cText2 p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  text-align: center;
+
+  /* Dark blue */
+
+  color: #282938;
+
+  opacity: 0.7;
+}

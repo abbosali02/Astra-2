@@ -1,0 +1,648 @@
+/* team-1 */
+html{
+  scroll-behavior: smooth;
+}
+
+/* burger navbar */
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
+}
+
+.logo img{
+  width: 20%;
+  position: absolute;
+  top: -80px;
+}
+.navi {
+  position: relative;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  
+  justify-content: space-between;
+
+}
+.navi .mainMenu {
+  display: flex;
+  list-style: none;
+  
+}
+.navi .mainMenu li a {
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+ 
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  
+  transition: 0.3s all linear;
+}
+.navi .mainMenu li a:hover {
+  /* border: 1px solid blue; */
+  transform: translateY(-3px);
+  color: silver;
+  
+  
+  
+  
+}
+.navi .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+.navi .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  
+}
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-youtube:hover {
+  color: red;
+}
+.fa-telegram:hover {
+  color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+  color: rgb(193, 58, 17);
+}
+.fa-github:hover {
+  color: rgb(255, 123, 0);
+}
+.navi .logo {
+  margin: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.navi .logo h1{
+  color: black;
+}
+@media (max-width: 800px) {
+  .navi .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+ 
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  .navi .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .navi .openMenu {
+    display: block;
+  }
+  .navi .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
+
+.a-bg-img-1l {
+ background: linear-gradient(
+  rgba(0, 0, 0, 0.6), 
+  rgba(0, 0, 0, 0.6)
+), url(../img/team/bg-image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* ====================== */
+
+.a-basket h1 {
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 80px;
+  text-transform: uppercase;
+
+  color: rgb(255, 255, 255);
+}
+
+.a-btn-1 {
+  width: 198px;
+  height: 48px;
+  background: darkblue;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.a-btn-1:hover{
+  color: darkblue;
+  background-color: white;
+  border: 3px solid darkblue;
+}
+
+.iconss i {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding-top: 25px;
+}
+.parallaxt {
+  background: url('../img/team/bh.jpg') repeat fixed 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.parallaxt-inner {
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+.t-text-1 h1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 50px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.t-btn-1 {
+  width: 250px;
+  height: 49px;
+  background: #4262ff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+}
+
+/* end of team-1 */
+
+/* team-2 */
+
+.t-text-2 h1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+  text-transform: uppercase;
+
+  color: darkblue;
+}
+
+.t-text-2 h2 {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* or 150% */
+
+  text-indent: 2px;
+  font-feature-settings: 'liga' off;
+
+  color: black;
+}
+
+.t-btn-2 {
+  width: 250px;
+  height: 49px;
+  background: darkblue;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  transition: 0.3s ease;
+}
+.t-btn-2:hover{
+  color: darkblue;
+  background-color: white;
+  border: 2px solid darkblue;
+}
+
+.t-img-1 img {
+  width: 274px;
+  height: 364px;
+}
+
+/* end of team-2 */
+
+/* team-3 */
+
+.parallaxte {
+  background: url('../img/team/teammate.jpg') repeat fixed 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+}
+
+.parallaxte-inner {
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+/* end of team-3 */
+
+/* team-4 */
+
+.t-img-4 img {
+  width: 69px;
+  height: 77px;
+}
+
+.t-text-4 h1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: black;
+}
+
+.t-text-4 h2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: darkblue;
+}
+.t-text-4 h3 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
+
+  letter-spacing: 0.03em;
+
+  color: black;
+}
+
+.t-btn-4 {
+  width: 121px;
+  height: 48px;
+  border: 3px solid darkblue;
+  border-radius: 4px;
+  color: darkblue;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.t-btn-4:hover{
+  color: white;
+  background-color: darkblue;
+}
+
+.t-img img {
+  width: 500px;
+  height: 610px;
+}
+
+/* end of team-4 */
+
+/* team-5 */
+
+.t-img-5 img {
+  width: 860px;
+  height: 392px;
+
+  border-radius: 0px 400px 400px 0px;
+}
+
+.t-text-5 h1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.t-text-5 h2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.t-btn-5 {
+  width: 160px;
+  height: 49px;
+  background: darkblue;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid darkblue;
+  color: #ffffff;
+  transition: 0.3s ease-in;
+}
+.t-btn-5:hover{
+background-color: white;
+color: darkblue;
+}
+
+.t-text5 h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+  /* or 75% */
+
+  color: black;
+}
+.t-text5 h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 111% */
+
+  text-align: justify;
+
+  color: black;
+}
+
+.t-img5 img {
+  width: 295px;
+  height: 521px;
+}
+
+/* END OF team-5 */
+
+/* team-6 */
+
+.parallaxtt {
+  background: url('../img/team/mtmoon.png') repeat fixed 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.parallaxtt-inner {
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+/* end of team-6 */
+
+/* team-9 */
+
+.parallaxtu {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.6)
+  ), url('../img/team/team.jpg') repeat fixed 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.parallaxtu-inner {
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+.t-text-9 h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.t-text-9 h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.t-btn-9 {
+  width: 200px;
+  height: 55px;
+  background: darkblue;
+  border-radius: 20px;
+  color: #ffffff;
+  border: 2px solid darkblue;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.t-btn-9:hover{
+color: darkblue;
+background-color: white;
+
+}
+/* end of team-9 */
+
+/* carousel */
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.cardd {
+  border-radius: 25px;
+  background-color: #fff;
+}
+.image-content,
+.cardd-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: darkblue;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: darkblue;
+}
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.cardd-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.cardd-image .cardd-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid darkblue;
+}
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.buttonn {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: darkblue;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid darkblue;
+  
+}
+.buttonn:hover {
+  background: white;
+  color: darkblue;
+}
+
+.swiper-navBtn {
+  color: darkblue;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+  color: darkblue;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-pagination-bullet {
+  background-color: darkblue;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: darkblue;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
+/* end of carousel */

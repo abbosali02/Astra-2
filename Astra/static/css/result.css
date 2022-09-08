@@ -1,0 +1,458 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,600&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,500;1,100&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&family=Tiro+Devanagari+Hindi:ital@0;1&family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@100&display=swap");
+/* burger navbar */
+body{
+  background-color: white;
+}
+html{
+  scroll-behavior: smooth;
+}
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
+}
+.parallaxa {
+  background: url('../img/about/explosion.jpg') repeat fixed 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.parallaxa-inner {
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+/* end of about-5 */
+
+/* about-6 */
+
+.img-6 img {
+  width: 60px;
+  height: 77px;
+}
+.logo img{
+  width: 20%;
+  position: absolute;
+  top: -80px;
+}
+.navi {
+  position: relative;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  
+  justify-content: space-between;
+
+}
+.navi .mainMenu {
+  display: flex;
+  list-style: none;
+  
+}
+.navi .mainMenu li a {
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+ 
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  
+  transition: 0.3s all linear;
+}
+.navi .mainMenu li a:hover {
+  /* border: 1px solid blue; */
+  transform: translateY(-3px);
+  color: silver;
+  
+
+  
+}
+.navi .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+.navi .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  
+}
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-youtube:hover {
+  color: red;
+}
+.fa-telegram:hover {
+  color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+  color: rgb(193, 58, 17);
+}
+.fa-github:hover {
+  color: rgb(255, 123, 0);
+}
+.navi .logo {
+  margin: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.navi .logo h1{
+  color: black;
+}
+@media (max-width: 800px) {
+  .navi .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+ 
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  .navi .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .navi .openMenu {
+    display: block;
+  }
+  .navi .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
+
+.a-bg-img-1 {
+ background: linear-gradient(
+  rgba(0, 0, 0, 0.6), 
+  rgba(0, 0, 0, 0.6)
+), url(../img/result/bg-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* ====================== */
+
+.a-basket h1 {
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 80px;
+  text-transform: uppercase;
+
+  color: rgb(255, 255, 255);
+}
+
+.a-btn-1 {
+  width: 198px;
+  height: 48px;
+  background: darkblue;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.a-btn-1:hover{
+  color: darkblue;
+  background-color: white;
+  border: 3px solid darkblue;
+}
+
+.iconss i {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding-top: 25px;
+}
+
+
+.platform_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 10rem;
+  color: white;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+.info_platform > h1 {
+  margin: 20px 0;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.description {
+  padding: 1rem 2rem;
+}
+.description > article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.description > article > i {
+  margin-right: 20px;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: darkblue;
+}
+
+.platform_section > img {
+  max-width: 400px;
+  object-position: center;
+}
+
+.read_documents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 10rem;
+  color: white;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+.read_documents > img {
+  max-width: 400px;
+  object-position: center;
+}
+
+.document_info > h1 {
+  margin: 20px 0;
+  font-size: 40px;
+}
+
+.needed {
+  display: flex;
+  margin: 3rem 0;
+}
+.needed > div > article {
+  display: flex;
+  align-items: center;
+  margin: 2rem 1rem;
+}
+.needed > div > article > i {
+  margin-right: 20px;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: darkblue;
+}
+
+.doc_btn {
+  background-color: darkblue;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+}
+.doc_btn:hover {
+  
+  background-color: white;
+  color: darkblue;
+}
+.growth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 10rem;
+  color: white;
+  background-color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+}
+.star-img {
+  display: flex;
+}
+.star-img > img {
+  width: 50px;
+}
+.info_growth > h1 {
+  margin: 20px 0;
+  font-size: 45px;
+  font-weight: 400;
+  color: darkblue;
+}
+.info_growth > p {
+  padding: 10px;
+  color: black;
+}
+.growth > img {
+  max-width: 600px;
+  object-position: center;
+}
+
+.btn_growth {
+  background-color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  color: darkblue;
+  cursor: pointer;
+  border: 2px solid darkblue;
+  transition: 0.3s all linear;
+  margin: 25px 0;
+}
+.btn_growth:hover{
+  background-color: darkblue;
+  color: white;
+  
+}
+._bgImage {
+  width: 100%;
+  height: 100vh;
+  background:  url(../img/result/7.0.jpeg);
+  background-size: cover;
+  transition: 0.3s ease-in;
+   
+    
+  }
+  ._bgImage2 {
+    width: 100%;
+    height: 100vh;
+    background:  url(../img/result/7.5.jpeg);
+    background-size: cover;
+    transition: 0.3s ease-in;
+     
+      
+    }
+    ._bgImage3 {
+      width: 100%;
+      height: 100vh;
+      background:  url(../img/result/8.0.jpeg);
+      background-size: cover;
+      transition: 0.3s ease-in;
+       
+        
+      }
+      ._bgImage4 {
+        width: 100%;
+        height: 100vh;
+        background:  url(../img/result/8.5.jpeg);
+        background-size: cover;
+        transition: 0.3s ease-in;
+         
+          
+        }
+._bgImage:hover {
+width: 100%;
+height: 100vh;
+background: linear-gradient(
+  rgba(0, 0, 0, 0.2), 
+  rgba(0, 0, 0, 0.2)
+), url(../img/result/7.0.jpeg);
+background-size: cover;
+ 
+  
+}
+._bgImage2:hover {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.2), 
+    rgba(0, 0, 0, 0.2)
+  ), url(../img/result/7.5.jpeg);
+  background-size: cover;
+   
+    
+  }
+  ._bgImage3:hover {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.2)
+    ), url(../img/result/8.0.jpeg);
+    background-size: cover;
+     
+      
+    }
+    ._bgImage4:hover {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0.2)
+      ), url(../img/result/8.5.jpeg);
+      background-size: cover;
+       
+        
+      }
+@media screen and (max-width: 1300px) {
+  .platform_section,
+  .read_documents,
+  .growth {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .platform_section > img {
+    padding: 25px;
+  }
+  .read_documents > img {
+    padding: 25px 10px;
+  }
+  .needed {
+    flex-direction: column;
+  }
+  .description {
+    padding: 0;
+  }
+  .description > article {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .growth > img {
+    width: 90%;
+    margin: auto;
+  }
+}

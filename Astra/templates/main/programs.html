@@ -1,0 +1,275 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ad-Astra</title>
+    <link rel="shortcut icon" type="x-icon" href="{% static 'img/Icon.png' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/programs.css' %}" />
+   
+
+    <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   
+    
+    <link rel="stylesheet" href="{% static 'css/courses.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+  </head>
+  <style>
+    a{
+      text-decoration: none;
+      outline: none;
+      
+    }
+  </style>
+  <body>
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+    <div class="section a-bg-img-1">
+      <div class="container">
+        <div class="columns ">
+          <div class="column is-12">
+            <div class="logo"><img src="{% static 'img/about/Logo.png' %}" alt=""></div>
+            <nav class="navi">
+              <div class=""></div>
+              <div class="openMenu"><i class="fa fa-bars"></i></div>
+              <ul class="mainMenu">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li> <a href="{% url 'programs' %}">Programs</a></li>
+                <li><a href="{% url 'result' %}">Results</a></li>
+                <li><a href="{% url 'team' %}">Team</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-telegram"></i>
+                 
+                </span>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="pt-6">
+          <div class="column pt-6 mt-6">
+
+          <div class="columns pt-6 mt-6">
+            <div class="column is-5 pt-6 mt-6">
+              
+              <div class="a-basket mb-2">
+                
+                <h1 class="">Programs</h1>
+                
+              </div>
+              <span class="iconss mt-6 pt-6">
+                <i class="fab fa-facebook pr-4"></i>
+                <i class="fab fa-instagram pr-4"></i>
+                <i class="fab fa-telegram pr-4"></i>
+                <i class="fab fa-youtube"></i>
+              </span>
+           
+          </div>
+        </div>
+            <div class="column is-6"></div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+   
+<!--==========================
+          Timeline Tab
+===========================-->
+
+<div class="columns is-centered pt-6 mt-6" data-aos="zoom-in-up">
+  <div class="column is-4"></div>
+  <div class="column is-4 b-section-text pl-3">
+    <h1 class="has-text-centered title">Course plans and services</h1>
+  </div>
+  <div class="column is-4"></div>
+</div>
+<div class="process-wrapper pb-5">
+  <div id="progress-bar-container">
+    <ul>
+      <li class="step step01 active"><div class="step-inner"><a href="{% url 'priceFirst' %}"></a>Beginner </a></div></li>
+     <li class="step step02"><div class="step-inner"><a href="{% url 'priceFirst' %}">IELTS Foundation</a>  </div></li>
+     <li class="step step03"><div class="step-inner"><a href="{% url 'priceFirst' %}">Pre-IELTS</a> </div></li>
+     <li class="step step04"><div class="step-inner"> <a href="{% url 'priceFirst' %}">IELTS</a></div></li> 
+     <li class="step step05"><div class="step-inner"><a href="{% url 'priceFirst' %}">Exam Registration</a></div></li>
+    </ul>
+    
+    <div id="line">
+      <div id="line-progress"></div>
+    </div>
+  </div>
+  
+  <div id="progress-content-section">
+    <div class="section-content discovery active">
+      <h2>BEGINNER</h2>
+      <p>This program is aimed at those students who have just begun learning English or can speak it on basic level"</p>
+    </div>
+    
+    <div class="section-content strategy">
+      <h2>IELTS FOUNDATION</h2>
+      <p>This program is aimed at intermediate to upper-intermediate level students. This course plan helps you build a strong basis before moving on to more challenging aspects of English". </p>
+    </div>
+    
+    <div class="section-content creative">
+      <h2>PRE-IELTS</h2>
+      <p>Eager to take your exam? We are almost there! Consolidate your foundation for a couple more months and feel more confident diving deeper into the IELTS world. </p>
+    </div>
+    
+    <div class="section-content production">
+      <h2>IELTS</h2>
+      <p>This is not a drill! I repeat, This is not a drill. Things just got more intense. Buckle down and get to work on your exam skills. Compound it with mental preparation and advanced learning techniques to take your learning experience to a whole another level."</p>
+    </div>
+    
+    <div class="section-content analysis">
+      <h2>EXAM REGISTRATION</h2>
+      <p>Are you having difficulties signing up for your exam? Don't worry. We got your back! Reach out to us for exam registration help and save yourself a massive headache!"
+      </p>
+    </div>
+    </div>
+  </div>
+
+
+
+
+
+   <div class="section parallaxtu">
+     <div class="container">
+       <div class="columns">
+         <div class="column is-6 pt-6">
+           <div class="t-text-9 mt-6 pt-6">
+             <h1>Do you want to take our course?</h1>
+             <h2>Reach out and enjoy our courses</h2>
+             <div class="mt-6">
+              <a href="{% url 'contact' %}"><button class="t-btn-9">Contact Us</button></a> 
+             </div>
+           </div>
+
+           <section class="">
+             <div class="parallaxtu-inner"></div>
+           </section>
+         </div>
+       </div>
+     </div>
+   </div>
+   
+   
+
+
+   
+
+
+
+
+
+
+
+    <div class="folio">
+      <div class="folio-wrapper">
+        <img src="{% static 'img/about/Logo.png' %}" alt="">
+      </div>
+      <p>
+        Agency is a full-service agency, busy designing and building beautiful
+        digital products, brands, and experiences.
+      </p>
+      <div class="folio-nav">
+        <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'team' %}">Team</a>
+            <a href="{% url 'result' %}">Results</a>
+      </div>
+      <footer>
+        <p>© 2022, Vectorweb.io</p>
+        <div class="footer-icon">
+          <a href="{% url 'contact' %}">Contact us</a>
+      
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript">
+     $(".faq-plus").on('click',function(){
+       $(this).parent().parent().find('.faq-body').slideToggle();
+     });
+   </script>
+    <script src="{% static 'js/contact.js' %}"></script>
+    <script>
+      let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#073763 ${scrollValue}%, #ffffff ${scrollValue}%)`;
+};
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+    </script>
+    <script>
+    
+      $(".step").click( function() {
+    $(this).addClass("active").prevAll().addClass("active");
+    $(this).nextAll().removeClass("active");
+  });
+  
+  $(".step01").click( function() {
+    $("#line-progress").css("width", "3%");
+    $(".discovery").addClass("active").siblings().removeClass("active");
+  });
+  
+  $(".step02").click( function() {
+    $("#line-progress").css("width", "25%");
+    $(".strategy").addClass("active").siblings().removeClass("active");
+  });
+  
+  $(".step03").click( function() {
+    $("#line-progress").css("width", "50%");
+    $(".creative").addClass("active").siblings().removeClass("active");
+  });
+  
+  $(".step04").click( function() {
+    $("#line-progress").css("width", "75%");
+    $(".production").addClass("active").siblings().removeClass("active");
+  });
+  
+  $(".step05").click( function() {
+    $("#line-progress").css("width", "100%");
+    $(".analysis").addClass("active").siblings().removeClass("active");
+  });
+  
+   
+      </script>
+  </body>
+</html>

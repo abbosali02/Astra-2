@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,600&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,500;1,100&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&family=Tiro+Devanagari+Hindi:ital@0;1&family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+nav {
+  background-color: black;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 2rem 5rem;
+  width: 100%;
+}
+
+nav > h1 {
+  color: green;
+  text-transform: uppercase;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav > ul > li {
+  list-style: none;
+  margin: 0 25px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+header {
+  padding: 25px;
+}
+header > h1 {
+  font-size: 50px;
+  
+}
+
+.links > a {
+  color: blue;
+}
+
+.wrapper {
+  display: flex;
+  padding: 20px;
+}
+.info_user {
+  width: 70%;
+  margin-right: 20px;
+}
+
+.user_pic {
+  display: flex;
+  align-items: center;
+}
+
+.user_pic > img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.info_user > img {
+  margin: 20px 0;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.info_user > p {
+  margin: 25px 0;
+}
+
+.article_wrapper {
+}
+
+.article_wrapper > article {
+  max-width: 400px;
+  padding: 20px;
+  margin: 25px 0;
+}
+
+.article_wrapper > article > img {
+  width: 100%;
+}
+.article_wrapper > article > a {
+  font-size: 18px;
+  margin: 25px 0;
+  color: blue;
+}
+.article_wrapper > article > h2 {
+  line-height: 40px;
+  font-size: 23px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.blog_picture {
+  display: flex;
+  align-items: center;
+}
+
+.blog_picture > img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.logo img{
+  width: 12%;
+  position: absolute;
+  top: -60px;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 230px){
+
+  .logo img {
+    width: 40%;
+    /* position: absolute; */
+    top: -60px;
+}
+}

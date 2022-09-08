@@ -1,0 +1,1318 @@
+/*=====================Root Colors==========================*/
+
+:root {
+  --main-bg-color: #1c1e53;
+  --main-btn-color: #fcd980;
+  --main-icon-color: #2405f2;
+  --main-text-color: #282938;
+  --main-section-color: #f4f5f5;
+}
+a {
+  cursor: pointer;
+}
+a:hover {
+  color: black;
+}
+h1 {
+  color: black;
+}
+
+/*=============================================================================================================
+											Our design to solve problem
+=============================================================================================================*/
+/*=====================First Section==========================*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Poppins;
+  font-style: normal;
+}
+
+.a-section-title h1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--main-text-color);
+}
+.a-section-title h2 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+  color: var(--main-text-color);
+}
+.a-section-title p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+  color: var(--main-text-color);
+
+  text-align: justify;
+}
+.a-section-img img {
+  width: 547px;
+}
+
+.section-two-title h1 {
+  font-family: Poppins;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  color: var(--main-text-color);
+}
+.section-two-title h2 {
+  font-family: Poppins;
+
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  color: var(--main-text-color);
+}
+.section-two-title p {
+  font-family: Poppins;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  color: var(--main-text-color);
+}
+.section-color {
+  width: 100%;
+  background: linear-gradient(to left bottom, wheat 50%, white 50%);
+  
+}
+.section-color-head {
+  background-color: #f4f5f5;
+  width: 80%;
+}
+.section-color-head-1 {
+  width: 80%;
+}
+.a-section-img img {
+  width: 547px;
+}
+.section-color-head-pic {
+  width: 96.3%;
+}
+/*=====================Second Section==========================*/
+.b-section-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 64px;
+  color: var(--main-text-color);
+}
+.b-section-text h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  text-align: center;
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.icon-section img {
+  width: 272px;
+}
+.icon-section h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+}
+.section-color-head-2 {
+  width: 80%;
+}
+.section-color-head-4 {
+  width: 80%;
+}
+.b-icon-section h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+.b-icon-section h1 {
+  font-family: Poppins;
+
+  font-weight: 600;
+  font-size: 28px;
+
+}
+.b-icon-section p {
+  font-family: Poppins;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+.section-color-2 {
+  width: 100%;
+  background-color: #eef4fa;
+}
+.color-icon {
+  background-color: #eef4fa;
+  height: 316px;
+}
+.color-icon h1 {
+  font-family: Poppins;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #282938;
+}
+.color-icon img {
+  width: 24px;
+}
+.color-icon-inner {
+  width: 90%;
+}
+.b-logo h1 {
+  font-family: Poppins;
+
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+}
+.b-logo h2 {
+  font-family: Poppins;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+.b-section-icons img {
+  width: 162px;
+}
+
+.team-section h1 {
+  font-family: Poppins;
+
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+}
+.section-our-team img {
+  width: 168px;
+}
+
+.section-our-team {
+  width: 296px;
+  height: 344px;
+  background-color: white;
+=======
+	width: 80%;
+	height: 150px;
+	clip-path: circle();
+
+}
+
+.section-our-team {
+	width: 100%;
+
+	background-color: white;
+>>>>>>> market
+}
+.section-our-team h1 {
+  font-family: Poppins;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+}
+.section-our-team p {
+  font-family: Poppins;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  /* b */
+
+  color: #1d2130;
+}
+.section-color-4 {
+  background-color: #f4f6fc;
+  width: 100%;
+}
+
+/*=============================================================================================================
+											All the features you need
+=============================================================================================================*/
+.a-agency-text h2 {
+  font-family: Poppins;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+}
+.a-agency-text h1 {
+  font-family: Poppins;
+
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  /* or 147% */
+
+  color: #232536;
+}
+.a-agency-text p {
+  font-family: Poppins;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+
+.section-color-head-5 {
+  width: 85%;
+}
+.section-color-agency {
+  width: 100%;
+  background-color: white;
+}
+.section-color-agency-2 {
+  width: 100%;
+  background: linear-gradient(to bottom left, wheat 50%, white 50%);
+}
+.faq-section h1 {
+  font-family: Poppins;
+
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  /* or 147% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.faq-section h2 a {
+  font-family: Poppins;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  text-align: center;
+
+  /* Royal Blue */
+
+  color: #2405f2;
+}
+.faq-section-icon img {
+  width: 16px;
+}
+.faq-section-text h1 {
+  font-family: Poppins;
+
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* Royal Blue */
+
+  color: #2405f2;
+}
+.faq-section-sentence h1 {
+  font-family: Poppins;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.faq-section-sentence p {
+  font-family: Poppins;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+
+.faq-section-text-main {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.accordion-img {
+  position: relative;
+  width: 320px;
+}
+
+.title-question {
+  margin: 1.4rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.up-icon {
+  display: none;
+}
+
+.faq-answered {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  display: none;
+}
+
+.show-text .faq-answered {
+  display: block;
+}
+
+.show-text .up-icon {
+  display: inline;
+}
+
+.show-text .down-icon {
+  display: none;
+}
+
+/* changes */
+
+
+
+/* end of the changes*/
+
+/*==============================================
+                  Menu
+==============================================*/
+.a-home-section-menu {
+  background-color: #1c1e53;
+}
+.a-home-menu h1 {
+  font-weight: 800;
+  font-size:  54px;
+  line-height: 74px;
+  /* or 137% */
+
+  /* White */
+
+  color: #ffffff;
+}
+.a-home-menu p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* White */
+
+  color: #ffffff;
+
+  opacity: 0.7;
+}
+
+.a-home-view a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  /* DARK */
+
+  color: #1b1c2b;
+}
+
+.a-home-arrow img {
+  width: 24px;
+  height: 10px;
+}
+.a-home-arrow a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  /* White */
+
+  color: #ffffff;
+}
+.a-home-arrow a:hover {
+  color: white;
+}
+.a-home-section {
+  width: 100%;
+}
+
+.a-home-container {
+  width: 75%;
+}
+/*==============================================
+                End  Menu
+==============================================*/
+
+.a-price-section {
+  width: 100%;
+}
+.b-price-color {
+  background: #f4f6fc;
+  border-radius: 12px;
+}
+.a-price-container {
+  width: 75%;
+}
+.a-price-text h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+
+.b-pirce-card h1 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  /* identical to box height, or 147% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.b-pirce-card-2 h1 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  /* identical to box height, or 147% */
+
+  /* Dark blue */
+
+  color: #ffffff;
+}
+.b-pirce-card-2 p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+}
+.b-pirce-card-2 h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* or 150% */
+
+  /* White */
+
+  color: #ffffff;
+}
+.b-price-button-2 {
+  background: #fcd980;
+  border-radius: 41px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 51px;
+}
+
+.b-price-button-2:hover {
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  box-sizing: border-box;
+  border-radius: 41px;
+  cursor: pointer;
+  background-color: #1c1e53;
+  color: white;
+}
+
+.b-price-button-2 a:hover {
+  color: white;
+}
+
+.b-price-button:hover {
+  background: #fcd980;
+  border-radius: 40px;
+}
+.b-price-button-2 a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.b-pirce-card-2 span {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  /* Yellow */
+
+  color: #fcd980;
+}
+.b-price-color-2 {
+  background: #1c1e53;
+  border-radius: 12px;
+}
+
+.b-pirce-card span {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+
+  /* identical to box height, or 175% */
+
+  /* Royal Blue */
+
+  color: #2405f2;
+}
+.b-pirce-card h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #282938;
+}
+.b-pirce-card p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+
+.b-pirce-card {
+  width: 90%;
+}
+.b-pirce-pointer img {
+  width: 20px;
+}
+.b-pirce-pointer h1 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+.b-price-button {
+  
+  background: #282938;
+  border-radius: 41px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 51px;
+}
+.b-price-button a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+
+  color: #f4f6fc;
+  text-decoration: none;
+  list-style: none;
+}
+.b-price-button a:hover {
+  color: white;
+}
+
+.faq-section h1 {
+  font-family: Poppins;
+
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  /* or 147% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.faq-section h2 a {
+  font-family: Poppins;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  text-align: center;
+
+  /* Royal Blue */
+
+  color: #2405f2;
+}
+.faq-section-icon img {
+  width: 16px;
+}
+.faq-section-text h1 {
+  font-family: Poppins;
+
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* Royal Blue */
+
+  color: #2405f2;
+}
+.faq-section-sentence h1 {
+  font-family: Poppins;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.faq-section-sentence p {
+  font-family: Poppins;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+
+.faq-section-text-main {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.accordion-img {
+  position: relative;
+  width: 320px;
+}
+
+.title-question {
+  margin: 1.4rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.up-icon {
+  display: none;
+}
+
+.faq-answered {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  display: none;
+}
+
+.show-text .faq-answered {
+  display: block;
+}
+
+.show-text .up-icon {
+  display: inline;
+}
+
+.show-text .down-icon {
+  display: none;
+}
+
+/*================================================
+                  Home
+===============================================*/
+/*==============================================
+                  Menu
+==============================================*/
+.a-home-section-menu {
+  background-color: #1c1e53;
+}
+.a-home-menu h1 {
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 74px;
+  /* or 137% */
+
+  /* White */
+
+  color: #ffffff;
+}
+.a-home-menu p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* White */
+
+  color: #ffffff;
+
+  opacity: 0.7;
+}
+.a-home-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 48px;
+  background: #fcd980;
+  border-radius: 40px;
+}
+.a-home-view a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  /* DARK */
+
+  color: #1b1c2b;
+}
+.a-home-arrow img {
+  width: 24px;
+  height: 10px;
+}
+.a-home-arrow a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  /* White */
+
+  color: #ffffff;
+}
+/*==============================================
+                End  Menu
+==============================================*/
+
+.a-home-section {
+  width: 100%;
+}
+
+.a-home-container {
+  width: 75%;
+}
+.a-home-text h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.a-home-text p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.a-home-icon h1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  /* Royal Blue */
+
+  color: #2405f2;
+}
+.a-home-icon img {
+  width: 20px;
+  height: 10px;
+}
+.a-home-card img {
+  width: 50px;
+}
+.a-home-card h1 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height, or 150% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.a-home-card p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+
+/*==============================================
+                  View our projects
+==============================================*/
+.a-project-title h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.a-project-subtitle h1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  color: #282938;
+}
+.a-project-subtitle img {
+  width: 24px;
+  height: 10px;
+}
+.a-project-pic img {
+  width: 843px;
+  height: 600px;
+}
+.a-project-pic img:hover {
+  transform: translateY(-5px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+
+  opacity: 0.9;
+}
+.a-project-pic2 img:hover {
+  transform: translateY(-5px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+
+  opacity: 0.9;
+}
+.a-project-pic2 img {
+  width: 100%;
+  height: 284px;
+}
+.a-project-pic3 img {
+  width: 100%;
+  height: 284px;
+}
+.a-project-pic3 img:hover {
+  transform: translateY(-5px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+
+  opacity: 0.9;
+}
+.project-cards-color {
+  width: 100%;
+  background-color: #f4f6fc;
+}
+.color-icon-home {
+  background-color: #ffffff;
+  height: 316px;
+}
+.color-icon-home:hover {
+  transform: translateY(-3px);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+  opacity: 0.9;
+}
+.color-icon-home h1 {
+  font-family: Poppins;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #282938;
+}
+.color-icon-home img {
+  width: 24px;
+}
+/*============================
+    View our project
+===========================*/
+
+.b-overlay-arrow img {
+  width: 24px;
+  height: 10px;
+}
+.c-overlay-project h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  /* or 150% */
+  color: black;
+  /* White */
+}
+.c-overlay-project {
+  border: 4px solid green;
+  position: absolute;
+  transition: all 0.3s ease;
+
+  top: 60%;
+  left: 8%;
+  transform: translate(8%, 8%);
+}
+.c-overlay-project p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* White */
+
+  color: #ffffff;
+}
+.b-overlay-arrow h1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  /* Yellow */
+
+  color: #fcd980;
+}
+/*============================================
+                  Our Blog
+============================================*/
+.blog-section-h1 h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.blog-card-a h1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* or 150% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.blog-card-a h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.blog-card-a img {
+  width: 100%;
+  height: 285px;
+}
+.blog-card-a img:hover {
+  transform: translateY(-5px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.blog-card-a p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.read-section-a img {
+  width: 24px;
+  height: 10px;
+}
+.read-section-a h1 {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  color: #282938;
+}
+
+/*=============================================
+                Clients
+=============================================*/
+.clients-section-a h1 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  /* or 147% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.clients-container-a h1 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  /* or 150% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+.clients-section-a p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* Dark blue */
+
+  color: #282938;
+}
+/*============================================
+                  Inquery
+============================================*/
+.section-inquery-column {
+}
+.section-inquery {
+  background-image: linear-gradient(
+      rgba(28, 30, 83, 0.5),
+      rgba(28, 30, 83, 0.5)
+    ),
+    url(../img/home/womenWrite.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-inquery-column h1 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+  /* or 137% */
+
+  /* White */
+
+  color: #ffffff;
+}
+.section-inquery-column p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  color: #ffffff;
+}
+.section-inquery-text h1 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height, or 150% */
+
+  color: #ffffff;
+}
+.section-inquery-text {
+  background-color: #1c1e53;
+}
+.section-inquery-text p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* Grey */
+
+  color: #f4f6fc;
+}
+.section-inquery-input {
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 90%;
+}
+.section-inquery-input input {
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+.section-inquery-text-word {
+  width: 80%;
+}
+.section-inquery-btn {
+  background: #fcd980;
+  border-radius: 41px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 60px;
+}
+.section-inquery-btn:hover {
+  color: white;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  background-color: #1c1e53;
+  box-sizing: border-box;
+  border-radius: 41px;
+  cursor: pointer;
+}
+.inquery-btn {
+  width: 90%;
+}
+
+.section-inquery-btn-text img {
+  width: 24px;
+  height: 10px;
+}
+.section-inquery-btn-text h1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  /* White */
+
+  color: #ffffff;
+}
+
+/*====================================
+            Media
+====================================*/
+@media only screen and (max-width: 500px) and (min-width: 230px) {
+  .a-home-view {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px;
+    background: #fcd980;
+    border-radius: 40px;
+  }
+  .a-home-view a {
+    font-size: 10px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+
+    /* DARK */
+
+    color: #1b1c2b;
+  }
+  .section-inquery-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    background: #fcd980;
+    border-radius: 40px;
+  }
+  .section-inquery-column h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 74px;
+    /* or 137% */
+
+    /* White */
+
+    color: #ffffff;
+  }
+  .section-two-title h1 {
+    font-family: Poppins;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 175% */
+
+    color: var(--main-text-color);
+  }
+  .section-two-title h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 56px;
+    color: var(--main-text-color);
+  }
+  .team-image {
+    width: 83%;
+    height: 120px;
+  }
+  .a-project-overlay img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .b-section-text h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--main-text-color);
+  }
+}
+._text_title{
+  text-transform: uppercase;
+  font-size: 100px;
+  color: coral;
+}
+._text_title2{
+  text-transform: uppercase;
+  font-size: 100px;
+  color: rgb(210, 77, 77);
+}

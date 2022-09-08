@@ -1,0 +1,323 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="{% static 'img/Icon.png' %}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/team.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}" />
+    <link href="{% static 'css/aos.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous">
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link rel="stylesheet" href="{% static 'css/smm.css' %}">
+   <link rel="stylesheet" href="{% static 'css/media.css' %}">
+    <script src="{% static 'js/aos.js' %}"></script>
+    <title>Ad-Astra</title>
+  </head>
+  <body>
+    <!-- team-1 -->
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+    <div class="section a-bg-img-1l">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-12">
+            <div class="logo"><img src="{% static 'img/about/Logo.png' %}" alt=""></div>
+            <nav class="navi">
+              <div class=""></div>
+              <div class="openMenu"><i class="fa fa-bars"></i></div>
+              <ul class="mainMenu">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li> <a href="{% url 'programs' %}">Programs</a></li>
+                <li><a href="{% url 'result' %}">Results</a></li>
+                <li><a href="{% url 'team' %}">Team</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-telegram"></i>
+                 
+                </span>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="pt-6">
+          <div class="pt-5 mt-5">
+          <div class="pt-6 mt-6">
+          <div class="columns pt-3 mt-6">
+            <div class="column is-5 pt-6 mt-6">
+              <div class="a-basket mb-2">
+                <h1 class="">Team</h1>
+                
+              </div>
+              <span class="iconss mt-6 pt-6">
+                <i class="fab fa-facebook pr-4"></i>
+                <i class="fab fa-instagram pr-4"></i>
+                <i class="fab fa-telegram pr-4"></i>
+                <i class="fab fa-youtube"></i>
+              </span>
+            </div>
+            <div class="column is-6"></div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of about-1 burger navbar -->
+
+    <!-- end of team-1 -->
+
+    <!-- team-2 -->
+
+
+    <!-- end of team-2 -->
+    <!--============================================================
+                                  Second Section
+            ============================================================-->
+            <div class="section-color-agency is-flex is-justify-content-center mt-6">
+              <div class="section-color-head-5 mt-6 pt-6 mb-6 pt-6">
+                <div class="columns pt-6 mb-6 pt-6">
+                  <div class="column is-6">
+                    <img
+                      src="{% static 'img/about/work2.jpg' %}"
+                      alt=""
+                      data-aos="flip-right"
+                    />
+                  </div>
+                  <div class="column is-1"></div>
+                  <div class="column is-5 a-agency-text has-text-start">
+                    <h2 class="pt-6 mt-6">Оптимизация сайта</h2>
+                    <h1 class="pt-5">Оптимизация сайта для быстрой загрузки.</h1>
+                    <p class="pt-4">
+                      Оптимизация сайта — это совокупность определенных способов и мер,
+                      позволяющих вывести сайт на лидирующие позиции в выдаче поисковых
+                      систем и опередить конкурентов.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <!-- team-3 -->
+
+    <div class="section parallaxte">
+      <div class="container pt-6 mt-6">
+        <div class="columns pt-6 mt-6">
+          <div class="column is-6">
+            <section class="">
+              <div class="parallaxte-inner"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of team-3 -->
+
+    <!-- team-4 -->
+   {% for item in first %}
+    <div class="section ">
+      <div class="container pt-6">
+        <div class="columns">
+          <div class="column is-6 pt-6 mt-6">
+            <div>
+              <div class="t-img-4">
+                <img data-aos="fade-right" src="{% static 'img/about/star.png' %}" alt="" />
+                <img data-aos="fade-down" src="{% static 'img/about/star.png' %}" alt="" />
+                <img data-aos="fade-left" src="{% static 'img/about/star.png' %}" alt="" />
+              </div>
+              <div class="t-text-4">
+                <h1 class="pt-6">{{ item.little }}</h1>
+                <h2 class="pt-6">{{item.title}}</h2>
+                <h3 class="pt-6 pb-4">
+                 {{item.desciption}}
+                </h3>
+               <a href="{{item.get_absolute_url}}"> <div class="t-btn-4 mt-4 has-text-centered pt-2">Read More</div></a>
+              </div>
+            </div>
+          </div>
+          <div class="column is-6">
+            <div class="t-img">
+              <img src="{{item.img.url}}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% for item in second %}
+    <div class="section">
+      <div class="container pt-6">
+        <div class="columns">
+          <div class="column is-6">
+            <div class="t-img">
+              <img src="{{item.img.url}}" alt="" />
+            </div>
+          </div>
+          <div class="column is-6 pt-6 mt-6">
+            <div>
+              <div class="t-img-4">
+                <img data-aos="fade-right" src="{% static 'img/about/star.png' %}" alt="" />
+                <img data-aos="fade-down" src="{% static 'img/about/star.png' %}" alt="" />
+                <img data-aos="fade-left" src="{% static 'img/about/star.png' %}" alt="" />
+              </div>
+              <div class="t-text-4">
+                <h1 class="pt-6">{{item.little}}</h1>
+                <h2 class="pt-6">{{item.title}}</h2>
+                <h3 class="pt-6 pb-4">
+                  {{item.desciption}}
+                </h3>
+               <a href="{{item.get_absolute_url}}"><div class="t-btn-4 mt-4 has-text-centered pt-2">Read More</div></a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endfor %}
+    <!-- end of team-4 -->
+
+    <!-- team-5 -->
+
+    
+      <div class="section">
+        
+
+        <!-- carousel -->
+        <div class="slide-container swiper pt-4 mt-4" >
+          <div class="slide-content" >
+            <div class="cardd-wrapper swiper-wrapper" id="#team">
+              {% for item in team %}
+              <div class="cardd swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="cardd-image">
+                    <img src="{{item.img.url}}" alt="" class="cardd-img" />
+                  </div>
+                </div>
+
+                <div class="cardd-content">
+                  <h2 class="name">{{item.title}}</h2>
+                  <p class="description">
+                    {{item.desciption}}
+                  </p>
+
+                  <a href="{{item.get_absolute_url}}"><button class="buttonn">View More</button></a>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- end of carousel -->
+      </div>
+    </div>
+
+    <!-- end of team-5 -->
+
+    <!-- team-6 -->
+
+    
+
+    <!-- end of team-6 -->
+
+    <!-- team-8 -->
+
+    
+
+    <!-- end of team-8 -->
+
+    <!-- team-9 -->
+
+    <div class="section parallaxtu">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-6 ">
+            <div class="t-text-9 mt-6 pt-6">
+              <h1>Do you want to work with us?</h1>
+              <h2>Reach out and work with us</h2>
+              <div class="mt-6">
+               <a href="{% url 'apply' %}"><button class="t-btn-9">WORK WITH US</button></a> 
+              </div>
+            </div>
+
+            <section class="">
+              <div class="parallaxtu-inner"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="folio">
+      <div class="folio-wrapper">
+        <img src="{% static 'img/about/Logo.png' %}" alt="">
+      </div>
+      <p>
+        Agency is a full-service agency, busy designing and building beautiful
+        digital products, brands, and experiences.
+      </p>
+      <div class="folio-nav">
+        <a href="{% url 'home' %}">Home</a>
+       
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'team' %}">Team</a>
+            <a href="{% url 'result' %}">Results</a>
+      </div>
+      <footer>
+        <p>© 2022, Vectorweb.io</p>
+        <div class="footer-icon">
+          <a href="{% url 'contact' %}">Contact us</a>
+          
+        </div>
+      </footer>
+    </div>
+    <!-- end of team-9 -->
+
+    <script>
+      AOS.init()
+    </script>
+<script>
+  let calcScrollValue = () => {
+let scrollProgress = document.getElementById("progress");
+let progressValue = document.getElementById("progress-value");
+let pos = document.documentElement.scrollTop;
+let calcHeight =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+let scrollValue = Math.round((pos * 100) / calcHeight);
+if (pos > 100) {
+scrollProgress.style.display = "grid";
+} else {
+scrollProgress.style.display = "none";
+}
+scrollProgress.addEventListener("click", () => {
+document.documentElement.scrollTop = 0;
+});
+scrollProgress.style.background = `conic-gradient(#073763 ${scrollValue}%, #ffffff ${scrollValue}%)`;
+};
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+</script>
+    <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/contact.js' %}"></script>
+  </body>
+</html>
