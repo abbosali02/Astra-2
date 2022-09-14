@@ -56,16 +56,16 @@ def policy(request):
 def thank(request):
      return render(request, 'main/thank.html')
 def first(request):
-     seven = Seven.objects.all()
+     seven = Seven.objects.order_by('-id')
      return render(request, 'main/pagination/first.html', {'seven':seven})
 def second(request):
-     sevenhalf = SevenHalf.objects.all()
+     sevenhalf = SevenHalf.objects.order_by('-id')
      return render(request, 'main/pagination/second.html', {'sevenhalf':sevenhalf})
 def third(request):
-     eight = Eight.objects.all()
+     eight = Eight.objects.order_by('-id')
      return render(request, 'main/pagination/third.html', {'eight':eight})
 def fourth(request):
-     eighthalf = EightHalf.objects.all()
+     eighthalf = EightHalf.objects.order_by('-id')
      return render(request, 'main/pagination/fourth.html', {'eighthalf' : eighthalf})
 
 def apply(request):
