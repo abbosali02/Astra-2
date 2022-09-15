@@ -17,6 +17,7 @@ html{
   place-items: center;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
   cursor: pointer;
 }
 #progress-value {
@@ -29,6 +30,7 @@ html{
   place-items: center;
   font-size: 35px;
   color: #001a2e;
+  z-index: 9999;
 }
 .navi {
   position: relative;
@@ -692,7 +694,8 @@ form .buttone input:hover {
 
 .img-15 img {
   width: 374px;
-  height: 374px;
+  height: 380px;
+  border-radius: 50%;
 }
 
 .img-15 h1 {
@@ -817,7 +820,8 @@ form .buttone input:hover {
 
 .a-img-17 img {
   width: 736px;
-  height: 870px;
+  height: 400px;
+  margin-top: 200px;
 }
 
 /* end of about-10 */

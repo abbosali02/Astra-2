@@ -3,21 +3,13 @@
      width: 100%;
      margin: auto;
      display: flex;
+ 
      flex-wrap: nowrap;
      justify-content: space-between;
+     
    }
 
-   @media only screen and (max-width: 700px) and (min-width: 230px){
-
-    .wrapper{
-      max-width: 1500px;
-      width: 100%;
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-}
+   
    .wrapper .table{
      background: #fff;
      width: calc(33% - 20px);
@@ -47,16 +39,18 @@
      position: relative;
    }
    .price-area .inner-area .text{
-     font-size: 25px;
+    
      font-weight: 400;
      position: absolute;
-     top: -10px;
-     left: 17px;
+     top: 23px;
+     left: 11px;
    }
    .price-area .inner-area .price{
-     font-size: 45px;
+     font-size: 20px;
      font-weight: 500;
-     margin-left: 16px;
+     margin-left: 8px;
+     margin-bottom: 10px;
+    
    }
    .table .package-name{
      width: 100%;
@@ -137,9 +131,18 @@
    .premium .btn button{
      background: #a26bfa;
    }
+   .premium2 ::selection,
+   .premium2 .price-area,
+   .premium2 .inner-area,
+   .premium2 .btn button{
+     background: #a26bfa;
+   }
    .premium .btn button:hover{
      background: #833af8;
    }
+   .premium2 .btn button:hover{
+    background: #833af8;
+  }
    .ultimate ::selection,
    .ultimate .price-area,
    .ultimate .inner-area{
@@ -160,30 +163,50 @@
    .premium .package-name{
      background: #d0b3ff;
    }
+   .premium2 .package-name{
+    background: #d0b3ff;
+  }
+
    .ultimate .package-name{
      background: #baf8d4;
    }
    .basic .package-name::before{
-     content: "Basic";
+     content: "Beginner";
    }
    .premium .package-name::before{
-     content: "Premium";
+     content: "IELTS Foundation";
      font-size: 24px;
    }
+   .premium2 .package-name::before{
+    content: "IELTS";
+    font-size: 24px;
+  }
    .ultimate .package-name::before{
-     content: "Ultimate";
+     content: "Pre-IELTS";
      font-size: 24px;
    }
+  
    @media (max-width: 1020px) {
      .wrapper .table{
        width: calc(50% - 20px);
        margin-bottom: 40px;
      }
+     .wrapper{
+      max-width: 1500px;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 200px;
+      margin-top: 200px;
+      justify-content: space-between;
+    }
    }
    @media (max-width: 698px) {
      .wrapper .table{
        width: 100%;
      }
+     
    }
    ::selection{
      color: #fff;
@@ -228,3 +251,5 @@
      text-transform: uppercase;
      box-shadow: 0 5px 10px rgba(0,0,0,0.12);
    }
+
+   
