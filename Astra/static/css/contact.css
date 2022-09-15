@@ -92,6 +92,9 @@ html{
 .fa-youtube:hover {
   color: red;
 }
+.fa-phone:hover{
+  color: green;
+}
 .fa-telegram:hover {
   color: rgb(86, 154, 243);
 }
@@ -224,10 +227,8 @@ html{
 }
 
 .platform_section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 10rem;
+
+  
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
@@ -240,9 +241,15 @@ html{
   font-size: 3rem;
   font-weight: 400;
 }
-
+.bd_text{
+  
+  font-size: 3rem;
+  font-weight: 400;
+}
 .description {
   padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
 }
 .description > article {
   display: flex;
@@ -250,12 +257,12 @@ html{
   align-items: center;
   margin: 2rem 0;
 }
-.description > article > i {
+.description > article > a>i {
   margin-right: 20px;
   font-size: 25px;
   padding: 15px;
   border-radius: 50%;
-  background-color: #3772ff;
+  background-color: darkblue;
 }
 
 .platform_section > img {
