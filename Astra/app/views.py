@@ -115,7 +115,7 @@ def programs(request):
      return render(request, 'main/programs.html')
 
 def priceFirst(request):
-     return render(request, 'main/programs/first.html')
+     return render(request, 'main/programs/programs.html')
 def Exam(request):
      return render(request, 'main/exam.html')
 
