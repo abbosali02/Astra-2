@@ -43,10 +43,11 @@
      font-weight: 400;
      position: absolute;
      top: 23px;
-     left: 11px;
+     left: 30px;
+     font-size: 10px;
    }
    .price-area .inner-area .price{
-     font-size: 20px;
+     font-size: 22px;
      font-weight: 500;
      margin-left: 8px;
      margin-bottom: 10px;
@@ -174,7 +175,7 @@
      content: "Beginner";
    }
    .premium .package-name::before{
-     content: "IELTS Foundation";
+     content: "Foundation";
      font-size: 24px;
    }
    .premium2 .package-name::before{

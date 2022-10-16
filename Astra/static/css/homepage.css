@@ -50,6 +50,7 @@ html{
 .navi .mainMenu {
   display: flex;
   list-style: none;
+  font-family: 'Times New Roman', Times, serif;
   
 }
 .navi .mainMenu li a {
@@ -59,7 +60,7 @@ html{
  
   color: rgb(255, 255, 255);
   font-size: 20px;
-  
+  font-family: 'Times New Roman', Times, serif;
   transition: 0.3s all linear;
 }
 .navi .mainMenu li a:hover {
@@ -955,4 +956,7 @@ a{
   font-feature-settings: 'liga' off;
 
   color: #000000;
+}
+a{
+  font-family: 'Times New Roman', Times, serif;
 }
