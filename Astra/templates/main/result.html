@@ -140,47 +140,20 @@
             split screen
 ===================================-->
 
-<main class="slider_main">
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 4</div>
-      <img src="{% static 'img/result/7.0.jpeg' %}" style="width: 100%" class="ielts_score" />
-      <button class="btn_text"><a href="#">Read More</a></button>
-    </div>
 
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 4</div>
-      <img src="{% static 'img/result/7.5.jpeg' %}" style="width: 100%" class="ielts_score" />
-      <button class="btn_text"><a href="#">Read More</a></button>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 4</div>
-      <img src="{% static 'img/result/8.0.jpeg' %}" style="width: 100%" class="ielts_score" />
-      <button class="btn_text"><a href="#">Read More</a></button>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">4 / 4</div>
-      <img src="{% static 'img/result/8.5.jpeg' %}" style="width: 100%" class="ielts_score" />
-      <button class="btn_text"><a href="#">Read More</a></button>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-
-    <div style="text-align: center" class="dot_cont">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
-  </div>
-</main>
   
     
 
+<div class="columns pt-4 ">
+  <a href="{% url 'first' %}" class="column is-6 _bgImage"></a>
+   
+   <a href="{% url 'second' %}" class="column is-6 _bgImage2"></a>
+ </div>
+ <div class="columns  has-background-black">
+   <a href="{% url 'third' %}" class="column is-6 _bgImage3 "></a>
   
+  <a href="{% url 'fourth' %}" class="column is-6 _bgImage4"></a>
+ </div>
 
     <div class="folio">
       <div class="folio-wrapper">
