@@ -135,7 +135,7 @@ color: grey;
   left: 0;
   right: 0;
   padding: 3.5rem 10%;
-  z-homepage: 1000;
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
