@@ -5,20 +5,13 @@ from .models import *
 
 # Create your views here.
 
-def homePage(request):
-     return render(request, 'main/homepage.html')
-def aboutPage(request):
-     return render(request, 'main/about.html')
-def teamPage(request):
+
+def Index(request):
+     results = Results.objects.all()
      team = Team.objects.all()
+     firstT = FirstTeacher.objects.all()
      first = FirstTeacher.objects.all()
      second = SecondTeacher.objects.all()
-     return render(request, 'main/team.html', {'team':team, 'first':first,'second':second} )
-def resultPage(request):
-     results = Results.objects.all()
-
-     return render(request, 'main/result.html', {'results': results})
-def contact(request):
 
      if request.method == "POST":
         contact = contactMe()
@@ -37,7 +30,18 @@ def contact(request):
         contact.telegram = telegram
         contact.save()
         return render(request, 'main/thank.html')
-     return render(request, 'main/contact.html')
+     return render(request, 'main/index.html', {
+          'results': results,
+          'team':team, 
+          'first':first,
+          'second':second,
+          'firstT':firstT})
+def homePage(request):
+     return render(request, 'main/homepage.html')
+
+
+
+
 def seven(request, slug):
      seven = Seven.objects.get(slug__iexact=slug)
      return render(request, 'main/overview/seven.html', {'seven':seven})
@@ -111,8 +115,7 @@ def secondTeacher(request, slug):
      second = SecondTeacher.objects.get(slug__iexact=slug)
      return render(request, 'main/team/second.html', {'second':second})
 
-def programs(request):
-     return render(request, 'main/programs.html')
+
 
 def priceFirst(request):
      return render(request, 'main/programs/programs.html')

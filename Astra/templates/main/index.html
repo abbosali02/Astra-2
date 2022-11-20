@@ -1,0 +1,659 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="x-icon" href="{% static 'img/Icon.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad-Astra</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   
+
+   
+   
+    <link rel="stylesheet" href="{% static 'css/css/timeline.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/counter-up.css' %}">
+   
+    <link rel="stylesheet" href="{% static 'css/css/about.css' %}">
+   
+    <link rel="stylesheet" href="{% static 'css/css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/team.css' %}">
+ 
+    <link rel="stylesheet" href="{% static 'css/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/founder.css' %}">
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+   
+
+ 
+</head>
+<body>
+
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <img src="{% static 'img/main/Logo.png' %}" alt=""> </a>
+
+    <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+        <a href="#home">Home</a>
+        <a href="#results">Results</a>
+        <a href="#programs">Programs</a>
+        <a href="#team">Team</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="tel:+998553065060" class="fas fa-phone"></a>
+        
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- search form  -->
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box bg-main" >
+                   
+                </div>
+                <div class="box2 bg-main2"></div>
+                
+            </div>
+            
+    </div>
+
+</section>
+
+
+
+<!--===========================================================================
+                        Results
+============================================================================-->
+<!-- home section ends -->
+
+<!-- category section starts  -->
+
+
+{% for item in results %}
+<div class="counter-up pt-6 mt-6" id="results">
+    <div class="content">
+      <div class="box">
+        <div class="icon"><h1>7.0</h1></div>
+        <div class="counter">{{item.seven}}</div>
+        <div class="text">Great!</div>
+      </div>
+      <div class="box">
+        <div class="icon"><h1>7.5</h1></div>
+        <div class="counter">{{item.sevenhalf}}</div>
+        <div class="text">Exceptionally good!</div>
+      </div>
+      <div class="box">
+        <div class="icon"><h1>8.0</h1></div>
+        <div class="counter">{{item.eight}}</div>
+        <div class="text">Excellent!</div>
+      </div>
+      <div class="box mb-5">
+        <div class="icon"><h1>8.5</h1></div>
+        <div class="counter">{{item.eighthalf}}</div>
+        <div class="text">Outstanding</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+<div id="timeline">
+  
+    <div class="tl-item">
+      
+     <a href="{% url 'first' %}"><div class="tl-bg" style="background-image: url('/static/img/main/7.0.jpg');"></div>
+      
+      <div class="tl-year">
+        <h1 class="heading0">7.0</h1>
+      </div>
+  
+    </a> 
+  
+    </div>
+  
+    <div class="tl-item">
+        <a href="{% url 'second' %}">
+      <div class="tl-bg" style="background-image: url('/static/img/main/7.5.jpg')"></div>
+      
+      <div class="tl-year">
+        <h1 class="heading0">7.5</h1>
+      </div>
+  
+    
+    </a>
+    </div>
+  
+    <div class="tl-item">
+        <a href="{% url 'third' %}">
+      <div class="tl-bg" style="background-image: url('/static/img/main/8.0.jpeg')"></div>
+      
+      <div class="tl-year">
+        <h1 class="heading0">8.0</h1>
+      </div>
+  
+ 
+    </a>
+    </div>
+
+    <div class="tl-item">
+        <a href="{% url 'fourth' %}">
+      
+      <div class="tl-bg" style="background-image: url('/static/img/main/8.5.jpg')"></div>
+      
+      <div class="tl-year">
+        <h1 class="heading0">8.5</h1>
+      </div>
+  
+    
+    </a>
+    </div>
+
+</div>
+
+<!--===========================================================================
+                        End Results
+============================================================================-->
+
+
+
+
+
+
+
+<!--========================================================================
+                        Our Programs
+=========================================================================-->
+
+<section class="about" id="programs">
+   
+    <div class="image">
+        <img src="{% static 'img/main/team.jpg' %}" alt="">
+    </div>
+
+    <div class="content">
+        <h3>Let the numbers speak for themselves</h3>
+        <p>We take pride in having helped countless of students to reach their goals and being a meaning part of their lives. Find out more about their journey with us and let their success stories serve as your source of inspiration. They could do it and you can do it too!</p>
+        <p></p>
+        <a href="#results" class="btn">read more</a>
+    </div>
+
+</section>
+<br>
+<br>
+<br>
+<h1 class="heading"> Our Programs</h1>
+<br>
+<br>
+<div></div>
+<div class="wrapper">
+    <div class="center-line">
+      <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-home"></i>
+        <div class="details">
+          <span class="title">Beginner</span>
+          <span></span>
+        </div>
+        <p>This program is aimed at those students who have just begun learning English or can speak it on basic level</p>
+        <div class="bottom">
+          <a href="{% url 'priceFirst' %}">Read more</a>
+          <i>Ad-Astra</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-star"></i>
+        <div class="details">
+          <span class="title">IELTS FOUNDATION</span>
+          <span></span>
+        </div>
+        <p>This program is aimed at intermediate to upper-intermediate level students. This course plan helps you build a strong basis before moving on to more challenging aspects of English.</p>
+        <div class="bottom">
+          <a href="{% url 'priceFirst' %}">Read more</a>
+          <i>Ad-Astra</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-rocket"></i>
+        <div class="details">
+          <span class="title">Pre-IELTS</span>
+          <span></span>
+        </div>
+        <p>Eager to take your exam? We are almost there! Consolidate your foundation for a couple more months and feel more confident diving deeper into the IELTS world.</p>
+        <div class="bottom">
+          <a href="{% url 'priceFirst' %}">Read more</a>
+          <i>Ad-Astra</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-globe"></i>
+        <div class="details">
+          <span class="title">IELTS</span>
+          <span></span>
+        </div>
+        <p>This is not a drill! I repeat, This is not a drill. Things just got more intense. Buckle down and get to work on your exam skills. Compound it with mental preparation and advanced learning techniques to take your learning experience to a whole another level.</p>
+        <div class="bottom">
+          <a href="{% url 'priceFirst' %}">Read more</a>
+          <i>Ad-Astra</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-paper-plane"></i>
+        <div class="details">
+          <span class="title">EXAM REGISTRATION</span>
+          <span></span>
+        </div>
+        <p>Are you having difficulties signing up for your exam? Don't worry. We got your back! Reach out to us for exam registration help and save yourself a massive headache!</p>
+        <div class="bottom">
+          <a href="{% url 'exam' %}">Read more</a>
+          <i>Ad-Astra</i>
+        </div>
+      </section>
+    </div>
+  
+  </div>
+
+
+<!--========================================================================
+                        End Our Programs
+=========================================================================-->
+
+<!--========================================================================
+                        Our Team
+=========================================================================-->
+<br>
+<br>
+<br>
+<h1 class="heading" id="team"> Meet our Founders</h1>
+<br>
+<p style="text-align: center; font-size:large; color: grey;">Over half a decade of our successful collaboration of over 5 years to get outstanding results </p>
+<p style="text-align: center; font-size:large; color: grey;"> pursue their dream academic and life goals</p>
+<div class="main">
+ 
+  <div class="profile-card">
+      <div class="img">
+          <img src="{% static 'img/main/Muhammad.jpg' %}">
+      </div>
+      <div class="caption">
+          <h3>Mukhammadali Sodikov</h3>
+          <p>Co-Founder of Ad Astra</p>
+          <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+      </div>
+  </div>
+  <div class="profile-card">
+      <div class="img">
+          <img src="{% static 'img/main/Alisher.jpg' %}">
+      </div>
+      <div class="caption">
+          <h3>Alisher Soliev</h3>
+          <p>Co-Founder of Ad Astra</p>
+          <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<section class="contact_section">
+   
+<div class="container">
+    <input type="radio" name="dot" id="one">
+    <input type="radio" name="dot" id="two">
+    <div class="main-card">
+      <div class="cards">
+        {% for item in team %}
+        <a href="{{item.get_absolute_url}}">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            - <img src="{{item.img.url}}" alt="">
+           </div>
+           <div class="details">
+             <div class="name">{{item.title}}</div>
+             <div class="job"> {{item.desciption}}</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+            
+           </div>
+         </div>
+        </div>
+        {% endfor %}
+        </a>
+   
+       
+      </div>
+      <div class="cards">
+        {% for item in firstT %}
+        <a href="{{item.get_absolute_url}}">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             -<img src="{{item.img.url}}" alt="">-
+           </div>
+           <div class="details">
+             <div class="name">{{item.title}}</div>
+             <div class="job">{{item.desciption}}</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+            
+           </div>
+         </div>
+        </div>
+      </a>
+      {% endfor %}
+       
+         
+       
+         
+      </div>
+    </div>
+    <div class="button">
+      <label for="one" class=" active one"></label>
+      <label for="two" class="two"></label>
+    </div>
+  </div>
+</section>
+<!--=====================================================================
+                      Our Team End
+=====================================================================-->
+
+
+
+
+<!-- ================================================================================
+                                About Section
+==================================================================================-->
+
+
+
+
+  <section class="services" id="about">
+
+    <h1 class="heading1"> Our Core Values </h1>
+    <br>
+    <br>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{% static 'img/main/1.png' %}" alt="">
+            <h3>Transparency</h3>
+            <p>We take pride in being completely transparent about the way we operate as well as our strengths and weak points</p>
+           
+        </div>
+
+        <div class="box">
+            <img src="{% static 'img/main/2.png' %}" alt="">
+            <h3>Open-mindedness</h3>
+            <p>Never stuck in our old ways. Always looking to explore new ideas and suggestions on ways to refine our services and keep up with the latest innovations in education as well as other areas of life</p>
+            
+        </div>
+
+        <div class="box">
+            <img src="{% static 'img/main/3.png' %}" alt="">
+            <h3>Commitment</h3>
+            <p>Our commitment is to our costumers who place their trust in us and join our loving family</p>
+          
+        </div>
+
+        <div class="box">
+            <img src="{% static 'img/main/4.png' %}" alt="">
+            <h3>Work ethics</h3>
+            <p>Talent without hard work equals zero</p>
+         
+        </div>
+
+        <div class="box">
+            <img src="{% static 'img/main/5.png' %}" alt="">
+            <h3>Constant Learning</h3>
+            <p>Just when we thought we had learned so much, we realized we had so much more to learn</p>
+            
+        </div>
+
+        <div class="box">
+            <img src="{% static 'img/main/6.png' %}" alt="">
+            <h3>Creative Approaches</h3>
+            <p>Rumor has it that teachers will be replaced by robots one day. Well, not unless we stay creative</p>
+            
+        </div>
+        
+    </div>
+
+</section>
+<!-- ================================================================================
+                                About Section End
+==================================================================================-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- blogs section ends -->
+<!-- ================================================================================
+                                Contact Section 
+==================================================================================-->
+<section class="contact_section" id="contact">
+<div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Bukhara</div>
+          <div class="text-two">Bukhara City, Ad-Astra</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+998 94 913-50-60</div>
+          <div class="text-two">+998 55 306-50-60</div>
+        </div>
+     
+      </div>
+      <div class="right-side">
+        
+        <div class="topic-text">Send us a message</div>
+        <br>
+        <br>
+        <p>
+          If you have any work from me or any types of quries related to my
+          tutorial, you can send me message from here. It's my pleasure to
+          help you.
+        </p>
+        <br>
+        <br>
+        <br>
+        <form action="#" method="POST">
+          {% csrf_token %}
+          <div class="input-box">
+            <input type="text" placeholder="Enter your first name" name="name"/>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your last name" name="last" />
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Phone Number" name="phone" />
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Your Age" name="age"/>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your email" name="email"/>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your Telegram Username" name="telegram"/>
+          </div>
+     
+          <div class="button">
+            <button class="btn_intro" type="submit">Read More</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================================================================================
+                                Contact Section End
+==================================================================================-->
+
+<!-- newsletter section  -->
+
+
+
+
+
+<!-- ========================================================================================
+                            Footer Ends
+==========================================================================================-->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#about">results</a>
+            <a href="#shop">programs</a>
+            <a href="#packages">team</a>
+            <a href="#reviews">about</a>
+            <a href="#blogs">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">facebook</a>
+            <a href="#">youtube</a>
+            <a href="#">telegram</a>
+            <a href="#">instagram</a>
+           
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +998 94 913-50-60 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +998 55 306-50-60</a>
+            
+            <a href="#"> <i class="fas fa-map"></i> Bukhara, Bukhara City - Ad-Astra </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> youtube </a>
+            <a href="#"> <i class="fab fa-instagram"></i> telegram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i> instagram</a>
+          
+        </div>
+
+    </div>
+
+    <div class="credit">created by <span>Ad-Astra Community</span> | all rights reserved!</div>
+
+</section>
+
+<!-- ========================================================================================
+                            Footer Ends
+==========================================================================================-->
+
+
+  <!-- ===================animation====================== -->
+  
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function(){
+      $('.counter').counterUp({
+        delay: 10,
+        time: 1200
+      });
+    });
+    </script>
+
+<script>
+  let outer = document.querySelector(".outer");
+  let inner = document.querySelector(".inner");
+  let percent = document.querySelector("span");
+  let count = 0;
+  inner.addEventListener('click', function(){
+    let loading = setInterval(function(){
+      if(count == 100){
+        outer.classList.remove("active-loader");
+        outer.classList.add("active-loader-2");
+        clearInterval();
+      }else{
+        count = count + 1;
+        percent.textContent = count + '%';
+        outer.classList.add("active-loader");
+      }
+    },200);
+  });
+</script>
+
+<!-- custom js file link  -->
+<script src="{% static 'js/js/script.js' %}"></script>
+
+
+
+</body>
+</html>

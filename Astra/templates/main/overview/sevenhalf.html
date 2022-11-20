@@ -13,12 +13,12 @@
     <nav>
    
       <ul>
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li> <a href="{% url 'programs' %}">Programs</a></li>
-        <li><a href="{% url 'result' %}">Results</a></li>
-        <li><a href="{% url 'team' %}">Team</a></li>
-        <li><a href="{% url 'about' %}">About</a></li>
-        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'index' %}">Home</a></li>
+                <li> <a href="{% url 'index' %}">Programs</a></li>
+                <li><a href="{% url 'index' %}">Results</a></li>
+                <li><a href="{% url 'index' %}">Team</a></li>
+                <li><a href="{% url 'index' %}">About</a></li>
+                <li><a href="{% url 'index' %}">Contact</a></li>
       </ul>
     </nav>
     <header>
@@ -50,26 +50,7 @@
         </div>
       </div>
     </header>
-    <div class="folio">
-      <div class="folio-wrapper">
-        <img src="{% static 'img/about/Logo.png' %}" alt="">
-      </div>
-      <p>
-        Greatness happens on the days when you show up even if you don't wanna be there
-      </p>
-      <div class="folio-nav">
-        <a href="{% url 'home' %}">Home</a>
-            <a href="{% url 'about' %}">About</a>
-            <a href="{% url 'team' %}">Team</a>
-            <a href="{% url 'result' %}">Results</a>
-      </div>
-      <footer>
-        <p>© 2022, Vectorweb.io</p>
-        <div class="footer-icon">
-          <a href="{% url 'contact' %}">Contact us</a>
-          
-        </div>
-      </footer>
-    </div>
+   
+   
   </body>
 </html>
