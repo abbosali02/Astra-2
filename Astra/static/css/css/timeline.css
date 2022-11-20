@@ -149,7 +149,7 @@ filter: grayscale(100%);
   width: 15px;
   background: #fff;
   top: 28px;
-  z-homepage: -1;
+  z-index: -1;
   transform: rotate(45deg);
 }
 .row-1 section::before{
@@ -212,8 +212,8 @@ filter: grayscale(100%);
 }
 .row section .bottom a:hover{
   transform: scale(0.97);
-  border: 1px solid white;
-  color: white;
+  border: 1px solid black;
+  color: black;
 }
 @media(max-width: 790px){
   .wrapper .center-line{
