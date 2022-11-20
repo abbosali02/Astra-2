@@ -6,7 +6,7 @@ from .models import *
 # Create your views here.
 
 
-def Index(request):
+def homepage(request):
      results = Results.objects.all()
      team = Team.objects.all()
      firstT = FirstTeacher.objects.all()
@@ -30,14 +30,13 @@ def Index(request):
         contact.telegram = telegram
         contact.save()
         return render(request, 'main/thank.html')
-     return render(request, 'main/index.html', {
+     return render(request, 'main/homepage.html', {
           'results': results,
           'team':team, 
           'first':first,
           'second':second,
           'firstT':firstT})
-def homePage(request):
-     return render(request, 'main/homepage.html')
+
 
 
 

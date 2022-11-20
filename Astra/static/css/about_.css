@@ -17,7 +17,7 @@ html{
   place-items: center;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
+  z-homepage: 9999;
   cursor: pointer;
 }
 #progress-value {
@@ -30,7 +30,7 @@ html{
   place-items: center;
   font-size: 35px;
   color: #001a2e;
-  z-index: 9999;
+  z-homepage: 9999;
 }
 .navi {
   position: relative;
@@ -110,7 +110,7 @@ html{
     top: 0px;
     right: 0px;
     left: 0px;
-    z-index: 10;
+    z-homepage: 10;
     flex-direction: column;
     justify-content: center;
     align-items: center;

@@ -224,7 +224,7 @@
    .table .ribbon::after{
      position: absolute;
      content: "";
-     z-index: -1;
+     z-homepage: -1;
      display: block;
      border: 7px solid #4606ac;
      border-top-color: transparent;
