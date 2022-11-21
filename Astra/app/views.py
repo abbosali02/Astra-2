@@ -33,9 +33,10 @@ def homepage(request):
      return render(request, 'main/homepage.html', {
           'results': results,
           'team':team, 
+          'firstT':firstT,
           'first':first,
           'second':second,
-          'firstT':firstT})
+          })
 
 
 
