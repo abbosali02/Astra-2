@@ -19,7 +19,8 @@ urlpatterns = [
     path('teachersecond/<slug:slug>/', views.secondTeacher, name='second_detail_url'),
     path('priceFirst/', views.priceFirst, name='priceFirst'),
     path('exam/', views.Exam, name="exam"),
-    path('', views.homepage, name='index')
+    path('', views.homepage, name='homepage'),
+    path('index/', views.index, name='index')
   
     
     

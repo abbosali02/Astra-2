@@ -15,7 +15,7 @@ html{
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  z-homepage: 9999;
+  z-index: 9999;
 }
 #progress-value {
   display: block;

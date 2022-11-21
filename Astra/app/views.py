@@ -30,13 +30,46 @@ def homepage(request):
         contact.telegram = telegram
         contact.save()
         return render(request, 'main/thank.html')
-     return render(request, 'main/homepage.html', {
+     return render(request, 'main/index.html', {
           'results': results,
           'team':team, 
           'firstT':firstT,
           'first':first,
           'second':second,
           })
+
+def index(request):
+     results = Results.objects.all()
+     team = Team.objects.all()
+     firstT = FirstTeacher.objects.all()
+     first = FirstTeacher.objects.all()
+     second = SecondTeacher.objects.all()
+
+     if request.method == "POST":
+        contact = contactMe()
+        name = request.POST.get('name')
+        last = request.POST.get('last')
+        age = request.POST.get('age')
+        phone = request.POST.get('phone')
+        email = request.POST.get('email')
+        telegram = request.POST.get('telegram')
+
+        contact.name = name
+        contact.last = last
+        contact.age = age
+        contact.phone = phone
+        contact.email = email
+        contact.telegram = telegram
+        contact.save()
+        return render(request, 'main/thank.html')
+     return render(request, 'main/index.html', {
+          'results': results,
+          'team':team, 
+          'firstT':firstT,
+          'first':first,
+          'second':second,
+          })
+
 
 
 
