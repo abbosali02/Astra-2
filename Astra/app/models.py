@@ -214,4 +214,74 @@ class SecondTeacher(models.Model):
 
     def get_absolute_url(self):
         return reverse('second_detail_url', kwargs={'slug': self.slug})
+    
+
+class ThirdTeacher(models.Model):
+    little = models.CharField('Position', max_length=300)
+    slug = models.SlugField('unique number', unique=True)
+    img = models.ImageField('Image', db_index=True)
+    title = models.CharField('Name', max_length=300)
+    desciption = models.CharField('Description', max_length=500)
+    subtitle = models.CharField('Subtitle', max_length=500)
+   
+    text = models.TextField('Text', max_length=5000)
+    img3 = models.ImageField('Image', db_index=True)
+    headtitle = models.CharField('Headtitle', max_length=1000)
+    
+
+    class Meta:
+        verbose_name = 'Third team'
+        verbose_name_plural = 'Third Team'
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse('third_detail_url', kwargs={'slug': self.slug})
+    
+class HeadTeacher(models.Model):
+    little = models.CharField('Position', max_length=300)
+    slug = models.SlugField('unique number', unique=True)
+    
+    title = models.CharField('Name', max_length=300)
+    desciption = models.CharField('Description', max_length=500)
+    subtitle = models.CharField('Subtitle', max_length=500)
+   
+    text = models.TextField('Text', max_length=5000)
+    img3 = models.ImageField('Image', db_index=True)
+    headtitle = models.CharField('Headtitle', max_length=1000)
+    
+
+    class Meta:
+        verbose_name = 'Head Teacher'
+        verbose_name_plural = 'Head Teacher'
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse('head_detail_url', kwargs={'slug': self.slug})
+    
+class MainTeacher(models.Model):
+    little = models.CharField('Position', max_length=300)
+    slug = models.SlugField('unique number', unique=True)
+    
+    title = models.CharField('Name', max_length=300)
+    desciption = models.CharField('Description', max_length=500)
+    subtitle = models.CharField('Subtitle', max_length=500)
+   
+    text = models.TextField('Text', max_length=5000)
+    img3 = models.ImageField('Image', db_index=True)
+    headtitle = models.CharField('Headtitle', max_length=1000)
+    
+
+    class Meta:
+        verbose_name = 'Main Teacher'
+        verbose_name_plural = 'Main Teacher'
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse('main_detail_url', kwargs={'slug': self.slug})
 

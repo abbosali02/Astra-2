@@ -12,6 +12,9 @@ def homepage(request):
      firstT = FirstTeacher.objects.all()
      first = FirstTeacher.objects.all()
      second = SecondTeacher.objects.all()
+     third = ThirdTeacher.objects.all()
+     main = MainTeacher.objects.all()
+     head = HeadTeacher.objects.all()
 
      if request.method == "POST":
         contact = contactMe()
@@ -36,6 +39,9 @@ def homepage(request):
           'firstT':firstT,
           'first':first,
           'second':second,
+          'third' : third,
+          'main':main,
+          'head':head
           })
 
 def index(request):
@@ -147,6 +153,9 @@ def firstTeacher(request, slug):
 def secondTeacher(request, slug):
      second = SecondTeacher.objects.get(slug__iexact=slug)
      return render(request, 'main/team/second.html', {'second':second})
+def thirdTeacher(request, slug):
+     third = ThirdTeacher.objects.get(slug__iexact = slug)
+     return render(request, 'main/team/third.html', {'third': third} )
 
 
 
@@ -154,5 +163,12 @@ def priceFirst(request):
      return render(request, 'main/programs/programs.html')
 def Exam(request):
      return render(request, 'main/exam.html')
+
+def Main(request,slug):
+     main = MainTeacher.objects.get(slug__iexact = slug)
+     return render(request, 'main/team/main.html', {'main':main})
+def Head(request, slug):
+     head = HeadTeacher.objects.get(slug__iexact = slug)
+     return render(request, 'main/team/head.html', {'head':head})
 
        

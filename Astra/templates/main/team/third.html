@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ad-Astra</title>
+    <link rel="shortcut icon" type="x-icon" href="{% static 'img/Icon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/seven.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   
+  </head>
+
+  <body>
+    <nav>
+   
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+                <li> <a href="{% url 'index' %}">Programs</a></li>
+                <li><a href="{% url 'index' %}">Results</a></li>
+                <li><a href="{% url 'index' %}">Team</a></li>
+                <li><a href="{% url 'index' %}">About</a></li>
+                <li><a href="{% url 'index' %}">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      
+      <h1>{{third.subtitle}}</h1>
+      <div class="wrapper">
+        <div class="info_user">
+          
+          <img
+            src="{{third.img.url}}"
+            alt=""
+          />
+          
+          <p>
+            {{third.text}}
+          </p>
+         
+        </div>
+        <div class="article_wrapper">
+          <article>
+            <img src="{{third.img3.url}}" alt="">
+            
+            <h2>
+              {{third.headtitle}}
+            </h2>
+            
+          </article>
+      
+        </div>
+      </div>
+    </header>
+    
+    
+  </body>
+</html>

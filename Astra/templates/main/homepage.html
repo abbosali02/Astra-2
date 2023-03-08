@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="{% static 'css/css/team.css' %}">
  
     <link rel="stylesheet" href="{% static 'css/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/css/founder.css' %}">
+   
  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -50,6 +50,7 @@
         <a href="#team">Team</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
+      
     </nav>
 
     <div class="icons">
@@ -298,40 +299,49 @@
 <br>
 <br>
 <br>
-<h1 class="heading" id="team"> Meet our Founders</h1>
+<h1 class="heading" id="team" style="color:white;"> Meet our Founders</h1>
 <br>
 <p style="text-align: center; font-size:large; color: grey;">Over half a decade of our successful collaboration of over 5 years to get outstanding results </p>
 <p style="text-align: center; font-size:large; color: grey;"> pursue their dream academic and life goals</p>
 <div class="main">
  
+
   <div class="profile-card">
+    {% for item in main %}
       <div class="img">
           <img src="{% static 'img/main/Muhammad.jpg' %}">
       </div>
       <div class="caption">
           <h3>Mukhammadali Sodikov</h3>
-          <p>Co-Founder of Ad Astra</p>
+          <a href="{{item.get_absolute_url}}"><p>Co-Founder of Ad Astra</p></a>
           <div class="social-links">
               <a href="#"><i class="fab fa-facebook"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
       </div>
+      {% endfor %}
   </div>
+ 
   <div class="profile-card">
+     {% for item in head %}
       <div class="img">
           <img src="{% static 'img/main/Alisher.jpg' %}">
       </div>
       <div class="caption">
           <h3>Alisher Soliev</h3>
-          <p>Co-Founder of Ad Astra</p>
+       <a href="{{item.get_absolute_url}}"> <p>Co-Founder of Ad Astra</p></a> 
           <div class="social-links">
               <a href="#"><i class="fab fa-facebook"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
       </div>
+      {% endfor %}
+    
   </div>
+
+
 </div>
 
 
@@ -389,6 +399,57 @@
         </div>
       </a>
       {% endfor %}
+       
+         
+       
+         
+      </div>
+
+
+      <div class="cards">
+        {% for item in second %}
+        <a href="{{item.get_absolute_url}}">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             -<img src="{{item.img.url}}" alt="">-
+           </div>
+           <div class="details">
+             <div class="name">{{item.title}}</div>
+             <div class="job">{{item.desciption}}</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+            
+           </div>
+         </div>
+        </div>
+      </a>
+      {% endfor %}
+
+      {% for item in third %}
+      <a href="{{item.get_absolute_url}}">
+      <div class="card">
+       <div class="content">
+         <div class="img">
+           -<img src="{{item.img.url}}" alt="">-
+         </div>
+         <div class="details">
+           <div class="name">{{item.title}}</div>
+           <div class="job">{{item.desciption}}</div>
+         </div>
+         <div class="media-icons">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+          
+         </div>
+       </div>
+      </div>
+    </a>
+    {% endfor %}
        
          
        
