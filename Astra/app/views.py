@@ -41,7 +41,7 @@ def homepage(request):
           'second':second,
           'third' : third,
           'main':main,
-          'head':head
+          'head':head,
           })
 
 def index(request):
